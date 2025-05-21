@@ -20,10 +20,10 @@ export const providerModelSettings: Record<string, { models: ProviderModelSettin
     models: []
   },
 
-  // 火山引擎(Doubao)提供商特定模型配置
-  doubao: {
-    models: []
-  },
+  // // 火山引擎(Doubao)提供商特定模型配置
+  // doubao: {
+  //   models: []
+  // },
 
   // Anthropic提供商特定模型配置
   anthropic: {
@@ -75,104 +75,104 @@ export const providerModelSettings: Record<string, { models: ProviderModelSettin
     ]
   },
 
-  // Gemini提供商特定模型配置
-  gemini: {
-    models: [
-      {
-        id: 'models/gemini-2.5-flash-preview-04-17',
-        name: 'Gemini 2.5 Flash Preview',
-        temperature: 0.7,
-        maxTokens: 65536,
-        contextLength: 1048576,
-        match: ['models/gemini-2.5-flash-preview-04-17', 'gemini-2.5-flash-preview-04-17'],
-        vision: true,
-        functionCall: true,
-        reasoning: true
-      },
-      {
-        id: 'gemini-2.5-pro-preview-05-06',
-        name: 'Gemini 2.5 Pro Preview 05-06',
-        temperature: 0.7,
-        maxTokens: 8192,
-        contextLength: 2048576,
-        match: ['gemini-2.5-pro-preview'],
-        vision: true,
-        functionCall: true,
-        reasoning: false
-      },
-      {
-        id: 'gemini-2.5-pro-exp-03-25',
-        name: 'Gemini 2.5 Pro Exp 03-25',
-        temperature: 0.7,
-        maxTokens: 65536,
-        contextLength: 2048576,
-        match: ['gemini-2.5-pro-exp-03-25'],
-        vision: true,
-        functionCall: true,
-        reasoning: false
-      },
-      {
-        id: 'gemini-2.0-flash-exp-image-generation',
-        name: 'Gemini 2.0 Flash Exp Image Generation',
-        temperature: 0.7,
-        maxTokens: 8192,
-        contextLength: 1048576,
-        match: ['gemini-2.0-flash-exp-image-generation'],
-        vision: true,
-        functionCall: true,
-        reasoning: false
-      },
-      {
-        id: 'gemini-2.0-pro-exp-02-05',
-        name: 'Gemini 2.0 Pro Exp 02-05',
-        temperature: 0.7,
-        maxTokens: 8192,
-        contextLength: 2048576,
-        match: ['gemini-2.0-pro-exp-02-05'],
-        vision: true,
-        functionCall: true,
-        reasoning: false
-      },
-      {
-        id: 'gemini-2.0-flash',
-        name: 'Gemini 2.0 Flash',
-        temperature: 0.7,
-        maxTokens: 8192,
-        contextLength: 1048576,
-        match: ['gemini-2.0-flash'],
-        vision: true,
-        functionCall: true,
-        reasoning: false
-      },
-      {
-        id: 'gemini-1.5-flash',
-        name: 'Gemini 1.5 Flash',
-        temperature: 0.7,
-        maxTokens: 8192,
-        contextLength: 1048576,
-        match: ['gemini-1.5-flash'],
-        vision: true,
-        functionCall: true,
-        reasoning: false
-      },
-      {
-        id: 'gemini-1.5-pro',
-        name: 'Gemini 1.5 Pro',
-        temperature: 0.7,
-        maxTokens: 8192,
-        contextLength: 2097152,
-        match: ['gemini-1.5-pro'],
-        vision: true,
-        functionCall: true,
-        reasoning: false
-      }
-    ]
-  },
+  // // Gemini提供商特定模型配置
+  // gemini: {
+  //   models: [
+  //     {
+  //       id: 'models/gemini-2.5-flash-preview-04-17',
+  //       name: 'Gemini 2.5 Flash Preview',
+  //       temperature: 0.7,
+  //       maxTokens: 65536,
+  //       contextLength: 1048576,
+  //       match: ['models/gemini-2.5-flash-preview-04-17', 'gemini-2.5-flash-preview-04-17'],
+  //       vision: true,
+  //       functionCall: true,
+  //       reasoning: true
+  //     },
+  //     {
+  //       id: 'gemini-2.5-pro-preview-05-06',
+  //       name: 'Gemini 2.5 Pro Preview 05-06',
+  //       temperature: 0.7,
+  //       maxTokens: 8192,
+  //       contextLength: 2048576,
+  //       match: ['gemini-2.5-pro-preview'],
+  //       vision: true,
+  //       functionCall: true,
+  //       reasoning: false
+  //     },
+  //     {
+  //       id: 'gemini-2.5-pro-exp-03-25',
+  //       name: 'Gemini 2.5 Pro Exp 03-25',
+  //       temperature: 0.7,
+  //       maxTokens: 65536,
+  //       contextLength: 2048576,
+  //       match: ['gemini-2.5-pro-exp-03-25'],
+  //       vision: true,
+  //       functionCall: true,
+  //       reasoning: false
+  //     },
+  //     {
+  //       id: 'gemini-2.0-flash-exp-image-generation',
+  //       name: 'Gemini 2.0 Flash Exp Image Generation',
+  //       temperature: 0.7,
+  //       maxTokens: 8192,
+  //       contextLength: 1048576,
+  //       match: ['gemini-2.0-flash-exp-image-generation'],
+  //       vision: true,
+  //       functionCall: true,
+  //       reasoning: false
+  //     },
+  //     {
+  //       id: 'gemini-2.0-pro-exp-02-05',
+  //       name: 'Gemini 2.0 Pro Exp 02-05',
+  //       temperature: 0.7,
+  //       maxTokens: 8192,
+  //       contextLength: 2048576,
+  //       match: ['gemini-2.0-pro-exp-02-05'],
+  //       vision: true,
+  //       functionCall: true,
+  //       reasoning: false
+  //     },
+  //     {
+  //       id: 'gemini-2.0-flash',
+  //       name: 'Gemini 2.0 Flash',
+  //       temperature: 0.7,
+  //       maxTokens: 8192,
+  //       contextLength: 1048576,
+  //       match: ['gemini-2.0-flash'],
+  //       vision: true,
+  //       functionCall: true,
+  //       reasoning: false
+  //     },
+  //     {
+  //       id: 'gemini-1.5-flash',
+  //       name: 'Gemini 1.5 Flash',
+  //       temperature: 0.7,
+  //       maxTokens: 8192,
+  //       contextLength: 1048576,
+  //       match: ['gemini-1.5-flash'],
+  //       vision: true,
+  //       functionCall: true,
+  //       reasoning: false
+  //     },
+  //     {
+  //       id: 'gemini-1.5-pro',
+  //       name: 'Gemini 1.5 Pro',
+  //       temperature: 0.7,
+  //       maxTokens: 8192,
+  //       contextLength: 2097152,
+  //       match: ['gemini-1.5-pro'],
+  //       vision: true,
+  //       functionCall: true,
+  //       reasoning: false
+  //     }
+  //   ]
+  // },
 
-  // 华为云Hunyuan提供商特定模型配置
-  hunyuan: {
-    models: []
-  },
+  // // 华为云Hunyuan提供商特定模型配置
+  // hunyuan: {
+  //   models: []
+  // },
 
   // DeepSeek提供商特定模型配置
   deepseek: {
@@ -215,457 +215,457 @@ export const providerModelSettings: Record<string, { models: ProviderModelSettin
   // Moonshot提供商特定模型配置
   moonshot: {
     models: []
-  },
+  }
 
   // Ollama提供商特定模型配置
-  ollama: {
-    models: [
-      {
-        id: 'qwen3:0.6b',
-        name: 'Qwen3 0.6B',
-        temperature: 0.6,
-        maxTokens: 8192,
-        contextLength: 40960,
-        match: ['qwen3:0.6b'],
-        vision: false,
-        functionCall: true,
-        reasoning: true
-      },
-      {
-        id: 'qwen3:1.7b',
-        name: 'Qwen3 1.7B',
-        temperature: 0.6,
-        maxTokens: 8192,
-        contextLength: 40960,
-        match: ['qwen3:1.7b'],
-        vision: false,
-        functionCall: true,
-        reasoning: true
-      },
-      {
-        id: 'qwen3:4b',
-        name: 'Qwen3 4B',
-        temperature: 0.6,
-        maxTokens: 8192,
-        contextLength: 40960,
-        match: ['qwen3:4b'],
-        vision: false,
-        functionCall: true,
-        reasoning: true
-      },
-      {
-        id: 'qwen3:8b',
-        name: 'Qwen3 8B',
-        temperature: 0.6,
-        maxTokens: 8192,
-        contextLength: 40960,
-        match: ['qwen3:8b'],
-        vision: false,
-        functionCall: true,
-        reasoning: true
-      },
-      {
-        id: 'qwen3:14b',
-        name: 'Qwen3 14B',
-        temperature: 0.6,
-        maxTokens: 8192,
-        contextLength: 40960,
-        match: ['qwen3:14b'],
-        vision: false,
-        functionCall: true,
-        reasoning: true
-      },
-      {
-        id: 'qwen3:32b',
-        name: 'Qwen3 32B',
-        temperature: 0.6,
-        maxTokens: 8192,
-        contextLength: 40960,
-        match: ['qwen3:32b'],
-        vision: false,
-        functionCall: true,
-        reasoning: true
-      },
-      {
-        id: 'qwen3:30b-a3b',
-        name: 'Qwen3 30B A3B',
-        temperature: 0.6,
-        maxTokens: 8192,
-        contextLength: 40960,
-        match: ['qwen3:30b-a3b'],
-        vision: false,
-        functionCall: true,
-        reasoning: true
-      },
-      {
-        id: 'qwen3:235b-a22b',
-        name: 'Qwen3 235B A22B',
-        temperature: 0.6,
-        maxTokens: 8192,
-        contextLength: 40960,
-        match: ['qwen3:235b-a22b'],
-        vision: false,
-        functionCall: true,
-        reasoning: true
-      }
-    ]
-  },
+  // ollama: {
+  //   models: [
+  //     {
+  //       id: 'qwen3:0.6b',
+  //       name: 'Qwen3 0.6B',
+  //       temperature: 0.6,
+  //       maxTokens: 8192,
+  //       contextLength: 40960,
+  //       match: ['qwen3:0.6b'],
+  //       vision: false,
+  //       functionCall: true,
+  //       reasoning: true
+  //     },
+  //     {
+  //       id: 'qwen3:1.7b',
+  //       name: 'Qwen3 1.7B',
+  //       temperature: 0.6,
+  //       maxTokens: 8192,
+  //       contextLength: 40960,
+  //       match: ['qwen3:1.7b'],
+  //       vision: false,
+  //       functionCall: true,
+  //       reasoning: true
+  //     },
+  //     {
+  //       id: 'qwen3:4b',
+  //       name: 'Qwen3 4B',
+  //       temperature: 0.6,
+  //       maxTokens: 8192,
+  //       contextLength: 40960,
+  //       match: ['qwen3:4b'],
+  //       vision: false,
+  //       functionCall: true,
+  //       reasoning: true
+  //     },
+  //     {
+  //       id: 'qwen3:8b',
+  //       name: 'Qwen3 8B',
+  //       temperature: 0.6,
+  //       maxTokens: 8192,
+  //       contextLength: 40960,
+  //       match: ['qwen3:8b'],
+  //       vision: false,
+  //       functionCall: true,
+  //       reasoning: true
+  //     },
+  //     {
+  //       id: 'qwen3:14b',
+  //       name: 'Qwen3 14B',
+  //       temperature: 0.6,
+  //       maxTokens: 8192,
+  //       contextLength: 40960,
+  //       match: ['qwen3:14b'],
+  //       vision: false,
+  //       functionCall: true,
+  //       reasoning: true
+  //     },
+  //     {
+  //       id: 'qwen3:32b',
+  //       name: 'Qwen3 32B',
+  //       temperature: 0.6,
+  //       maxTokens: 8192,
+  //       contextLength: 40960,
+  //       match: ['qwen3:32b'],
+  //       vision: false,
+  //       functionCall: true,
+  //       reasoning: true
+  //     },
+  //     {
+  //       id: 'qwen3:30b-a3b',
+  //       name: 'Qwen3 30B A3B',
+  //       temperature: 0.6,
+  //       maxTokens: 8192,
+  //       contextLength: 40960,
+  //       match: ['qwen3:30b-a3b'],
+  //       vision: false,
+  //       functionCall: true,
+  //       reasoning: true
+  //     },
+  //     {
+  //       id: 'qwen3:235b-a22b',
+  //       name: 'Qwen3 235B A22B',
+  //       temperature: 0.6,
+  //       maxTokens: 8192,
+  //       contextLength: 40960,
+  //       match: ['qwen3:235b-a22b'],
+  //       vision: false,
+  //       functionCall: true,
+  //       reasoning: true
+  //     }
+  //   ]
+  // },
 
-  // 七牛云提供商特定模型配置
-  qiniu: {
-    models: []
-  },
+  // // 七牛云提供商特定模型配置
+  // qiniu: {
+  //   models: []
+  // },
 
-  // Silicon Flow提供商特定模型配置
-  silicon: {
-    models: [
-      {
-        id: 'Qwen/Qwen3-235B-A22B',
-        name: 'Qwen/Qwen3-235B-A22B',
-        temperature: 0.6,
-        maxTokens: 8192,
-        contextLength: 100_000,
-        match: ['qwen3-235b-a22b'],
-        vision: false,
-        functionCall: true,
-        reasoning: true
-      },
-      {
-        id: 'Qwen/Qwen3-30B-A3B',
-        name: 'Qwen/Qwen3-30B-A3B',
-        temperature: 0.6,
-        maxTokens: 8192,
-        contextLength: 100_000,
-        match: ['qwen3-30b-a3b'],
-        vision: false,
-        functionCall: true,
-        reasoning: true
-      },
-      {
-        id: 'Qwen/Qwen3-32B',
-        name: 'Qwen/Qwen3-32B',
-        temperature: 0.6,
-        maxTokens: 8192,
-        contextLength: 100_000,
-        match: ['qwen3-32b'],
-        vision: false,
-        functionCall: true,
-        reasoning: true
-      },
-      {
-        id: 'Qwen/Qwen3-14B',
-        name: 'Qwen/Qwen3-14B',
-        temperature: 0.6,
-        maxTokens: 8192,
-        contextLength: 100_000,
-        match: ['qwen3-14b'],
-        vision: false,
-        functionCall: true,
-        reasoning: true
-      },
-      {
-        id: 'Qwen/Qwen3-8B',
-        name: 'Qwen/Qwen3-8B',
-        temperature: 0.6,
-        maxTokens: 8192,
-        contextLength: 100_000,
-        match: ['qwen3-8b'],
-        vision: false,
-        functionCall: true,
-        reasoning: true
-      },
-      {
-        id: 'Pro/deepseek-ai/DeepSeek-V3',
-        name: 'DeepSeek V3 Pro',
-        temperature: 0.6,
-        maxTokens: 7000,
-        contextLength: 62000,
-        match: ['pro/deepseek-ai/deepseek-v3'],
-        vision: false,
-        functionCall: true,
-        reasoning: false
-      },
-      {
-        id: 'Pro/deepseek-ai/DeepSeek-R1',
-        name: 'DeepSeek R1 Pro',
-        temperature: 0.6,
-        maxTokens: 7000,
-        contextLength: 62000,
-        match: ['pro/deepseek-ai/deepseek-r1'],
-        vision: false,
-        functionCall: false,
-        reasoning: true
-      },
-      {
-        id: 'deepseek-ai/DeepSeek-V3',
-        name: 'DeepSeek V3',
-        temperature: 0.6,
-        maxTokens: 7000,
-        contextLength: 62000,
-        match: ['deepseek-ai/deepseek-v3'],
-        vision: false,
-        functionCall: false,
-        reasoning: false
-      },
-      {
-        id: 'deepseek-ai/DeepSeek-R1',
-        name: 'DeepSeek R1',
-        temperature: 0.6,
-        maxTokens: 7000,
-        contextLength: 62000,
-        match: ['deepseek-ai/deepseek-r1'],
-        vision: false,
-        functionCall: false,
-        reasoning: true
-      }
-    ]
-  },
+  // // Silicon Flow提供商特定模型配置
+  // silicon: {
+  //   models: [
+  //     {
+  //       id: 'Qwen/Qwen3-235B-A22B',
+  //       name: 'Qwen/Qwen3-235B-A22B',
+  //       temperature: 0.6,
+  //       maxTokens: 8192,
+  //       contextLength: 100_000,
+  //       match: ['qwen3-235b-a22b'],
+  //       vision: false,
+  //       functionCall: true,
+  //       reasoning: true
+  //     },
+  //     {
+  //       id: 'Qwen/Qwen3-30B-A3B',
+  //       name: 'Qwen/Qwen3-30B-A3B',
+  //       temperature: 0.6,
+  //       maxTokens: 8192,
+  //       contextLength: 100_000,
+  //       match: ['qwen3-30b-a3b'],
+  //       vision: false,
+  //       functionCall: true,
+  //       reasoning: true
+  //     },
+  //     {
+  //       id: 'Qwen/Qwen3-32B',
+  //       name: 'Qwen/Qwen3-32B',
+  //       temperature: 0.6,
+  //       maxTokens: 8192,
+  //       contextLength: 100_000,
+  //       match: ['qwen3-32b'],
+  //       vision: false,
+  //       functionCall: true,
+  //       reasoning: true
+  //     },
+  //     {
+  //       id: 'Qwen/Qwen3-14B',
+  //       name: 'Qwen/Qwen3-14B',
+  //       temperature: 0.6,
+  //       maxTokens: 8192,
+  //       contextLength: 100_000,
+  //       match: ['qwen3-14b'],
+  //       vision: false,
+  //       functionCall: true,
+  //       reasoning: true
+  //     },
+  //     {
+  //       id: 'Qwen/Qwen3-8B',
+  //       name: 'Qwen/Qwen3-8B',
+  //       temperature: 0.6,
+  //       maxTokens: 8192,
+  //       contextLength: 100_000,
+  //       match: ['qwen3-8b'],
+  //       vision: false,
+  //       functionCall: true,
+  //       reasoning: true
+  //     },
+  //     {
+  //       id: 'Pro/deepseek-ai/DeepSeek-V3',
+  //       name: 'DeepSeek V3 Pro',
+  //       temperature: 0.6,
+  //       maxTokens: 7000,
+  //       contextLength: 62000,
+  //       match: ['pro/deepseek-ai/deepseek-v3'],
+  //       vision: false,
+  //       functionCall: true,
+  //       reasoning: false
+  //     },
+  //     {
+  //       id: 'Pro/deepseek-ai/DeepSeek-R1',
+  //       name: 'DeepSeek R1 Pro',
+  //       temperature: 0.6,
+  //       maxTokens: 7000,
+  //       contextLength: 62000,
+  //       match: ['pro/deepseek-ai/deepseek-r1'],
+  //       vision: false,
+  //       functionCall: false,
+  //       reasoning: true
+  //     },
+  //     {
+  //       id: 'deepseek-ai/DeepSeek-V3',
+  //       name: 'DeepSeek V3',
+  //       temperature: 0.6,
+  //       maxTokens: 7000,
+  //       contextLength: 62000,
+  //       match: ['deepseek-ai/deepseek-v3'],
+  //       vision: false,
+  //       functionCall: false,
+  //       reasoning: false
+  //     },
+  //     {
+  //       id: 'deepseek-ai/DeepSeek-R1',
+  //       name: 'DeepSeek R1',
+  //       temperature: 0.6,
+  //       maxTokens: 7000,
+  //       contextLength: 62000,
+  //       match: ['deepseek-ai/deepseek-r1'],
+  //       vision: false,
+  //       functionCall: false,
+  //       reasoning: true
+  //     }
+  //   ]
+  // },
 
-  // Fireworks提供商特定模型配置
-  fireworks: {
-    models: []
-  },
+  // // Fireworks提供商特定模型配置
+  // fireworks: {
+  //   models: []
+  // },
 
-  // PPIO提供商特定模型配置
-  ppio: {
-    models: [
-      {
-        id: 'qwen/qwen3-235b-a22b-fp8',
-        name: 'Qwen/Qwen3-235B-A22B',
-        temperature: 0.6,
-        maxTokens: 8192,
-        contextLength: 40960,
-        match: ['qwen3-235b-a22b-fp8', 'qwen3-235b-a22b'],
-        vision: false,
-        functionCall: false,
-        reasoning: true
-      },
-      {
-        id: 'qwen/qwen3-30b-a3b-fp8',
-        name: 'Qwen/Qwen3-30B-A3B',
-        temperature: 0.6,
-        maxTokens: 8192,
-        contextLength: 40960,
-        match: ['qwen3-30b-a3b-fp8', 'qwen3-30b-a3b'],
-        vision: false,
-        functionCall: false,
-        reasoning: true
-      },
-      {
-        id: 'qwen/qwen3-30b-a3b-fp8',
-        name: 'Qwen/Qwen3-30B-A3B',
-        temperature: 0.6,
-        maxTokens: 8192,
-        contextLength: 40960,
-        match: ['qwen3-30b-a3b-fp8', 'qwen3-30b-a3b'],
-        vision: false,
-        functionCall: false,
-        reasoning: true
-      },
-      {
-        id: 'qwen/qwen3-32b-fp8',
-        name: 'Qwen/Qwen3-32B',
-        temperature: 0.6,
-        maxTokens: 8192,
-        contextLength: 40960,
-        match: ['qwen3-32b-fp8', 'qwen3-32b'],
-        vision: false,
-        functionCall: false,
-        reasoning: true
-      },
-      {
-        id: 'deepseek/deepseek-prover-v2-671b',
-        name: 'Deepseek Prover V2 671B',
-        temperature: 0.3,
-        maxTokens: 10000,
-        contextLength: 150000,
-        match: ['deepseek-prover-v2-671b'],
-        vision: false,
-        functionCall: false,
-        reasoning: true
-      },
-      {
-        id: 'deepseek/deepseek-v3-0324',
-        name: 'DeepSeek Chat v3 0324',
-        temperature: 0.6,
-        maxTokens: 10000,
-        contextLength: 110_000,
-        match: ['deepseek-chat-v3-0324'],
-        vision: false,
-        functionCall: true,
-        reasoning: false
-      },
-      {
-        id: 'deepseek/deepseek-r1-turbo',
-        name: 'DeepSeek R1 Turbo',
-        temperature: 0.6,
-        maxTokens: 10000,
-        contextLength: 50000,
-        match: ['deepseek-r1-turbo'],
-        vision: false,
-        functionCall: true,
-        reasoning: true
-      },
-      {
-        id: 'deepseek/deepseek-v3-turbo',
-        name: 'DeepSeek V3 Turbo',
-        temperature: 0.6,
-        maxTokens: 10000,
-        contextLength: 50000,
-        match: ['deepseek-v3-turbo'],
-        vision: false,
-        functionCall: true,
-        reasoning: false
-      },
-      {
-        id: 'deepseek/deepseek-v3/community',
-        name: 'DeepSeek V3 Community',
-        temperature: 0.6,
-        maxTokens: 3200,
-        contextLength: 62000,
-        match: ['deepseek-v3/community'],
-        vision: false,
-        functionCall: true,
-        reasoning: false
-      },
-      {
-        id: 'deepseek/deepseek-r1/community',
-        name: 'DeepSeek R1 Community',
-        temperature: 0.6,
-        maxTokens: 3200,
-        contextLength: 62000,
-        match: ['deepseek-r1/community'],
-        vision: false,
-        functionCall: true,
-        reasoning: true
-      },
-      {
-        id: 'deepseek/deepseek-v3',
-        name: 'DeepSeek V3',
-        temperature: 0.6,
-        maxTokens: 7000,
-        contextLength: 62000,
-        match: ['deepseek-v3'],
-        vision: false,
-        functionCall: true,
-        reasoning: false
-      },
-      {
-        id: 'deepseek-r1',
-        name: 'DeepSeek R1',
-        temperature: 0.6,
-        maxTokens: 7000,
-        contextLength: 62000,
-        match: ['deepseek-r1'],
-        vision: false,
-        functionCall: true,
-        reasoning: true
-      }
-    ]
-  },
+  // // PPIO提供商特定模型配置
+  // ppio: {
+  //   models: [
+  //     {
+  //       id: 'qwen/qwen3-235b-a22b-fp8',
+  //       name: 'Qwen/Qwen3-235B-A22B',
+  //       temperature: 0.6,
+  //       maxTokens: 8192,
+  //       contextLength: 40960,
+  //       match: ['qwen3-235b-a22b-fp8', 'qwen3-235b-a22b'],
+  //       vision: false,
+  //       functionCall: false,
+  //       reasoning: true
+  //     },
+  //     {
+  //       id: 'qwen/qwen3-30b-a3b-fp8',
+  //       name: 'Qwen/Qwen3-30B-A3B',
+  //       temperature: 0.6,
+  //       maxTokens: 8192,
+  //       contextLength: 40960,
+  //       match: ['qwen3-30b-a3b-fp8', 'qwen3-30b-a3b'],
+  //       vision: false,
+  //       functionCall: false,
+  //       reasoning: true
+  //     },
+  //     {
+  //       id: 'qwen/qwen3-30b-a3b-fp8',
+  //       name: 'Qwen/Qwen3-30B-A3B',
+  //       temperature: 0.6,
+  //       maxTokens: 8192,
+  //       contextLength: 40960,
+  //       match: ['qwen3-30b-a3b-fp8', 'qwen3-30b-a3b'],
+  //       vision: false,
+  //       functionCall: false,
+  //       reasoning: true
+  //     },
+  //     {
+  //       id: 'qwen/qwen3-32b-fp8',
+  //       name: 'Qwen/Qwen3-32B',
+  //       temperature: 0.6,
+  //       maxTokens: 8192,
+  //       contextLength: 40960,
+  //       match: ['qwen3-32b-fp8', 'qwen3-32b'],
+  //       vision: false,
+  //       functionCall: false,
+  //       reasoning: true
+  //     },
+  //     {
+  //       id: 'deepseek/deepseek-prover-v2-671b',
+  //       name: 'Deepseek Prover V2 671B',
+  //       temperature: 0.3,
+  //       maxTokens: 10000,
+  //       contextLength: 150000,
+  //       match: ['deepseek-prover-v2-671b'],
+  //       vision: false,
+  //       functionCall: false,
+  //       reasoning: true
+  //     },
+  //     {
+  //       id: 'deepseek/deepseek-v3-0324',
+  //       name: 'DeepSeek Chat v3 0324',
+  //       temperature: 0.6,
+  //       maxTokens: 10000,
+  //       contextLength: 110_000,
+  //       match: ['deepseek-chat-v3-0324'],
+  //       vision: false,
+  //       functionCall: true,
+  //       reasoning: false
+  //     },
+  //     {
+  //       id: 'deepseek/deepseek-r1-turbo',
+  //       name: 'DeepSeek R1 Turbo',
+  //       temperature: 0.6,
+  //       maxTokens: 10000,
+  //       contextLength: 50000,
+  //       match: ['deepseek-r1-turbo'],
+  //       vision: false,
+  //       functionCall: true,
+  //       reasoning: true
+  //     },
+  //     {
+  //       id: 'deepseek/deepseek-v3-turbo',
+  //       name: 'DeepSeek V3 Turbo',
+  //       temperature: 0.6,
+  //       maxTokens: 10000,
+  //       contextLength: 50000,
+  //       match: ['deepseek-v3-turbo'],
+  //       vision: false,
+  //       functionCall: true,
+  //       reasoning: false
+  //     },
+  //     {
+  //       id: 'deepseek/deepseek-v3/community',
+  //       name: 'DeepSeek V3 Community',
+  //       temperature: 0.6,
+  //       maxTokens: 3200,
+  //       contextLength: 62000,
+  //       match: ['deepseek-v3/community'],
+  //       vision: false,
+  //       functionCall: true,
+  //       reasoning: false
+  //     },
+  //     {
+  //       id: 'deepseek/deepseek-r1/community',
+  //       name: 'DeepSeek R1 Community',
+  //       temperature: 0.6,
+  //       maxTokens: 3200,
+  //       contextLength: 62000,
+  //       match: ['deepseek-r1/community'],
+  //       vision: false,
+  //       functionCall: true,
+  //       reasoning: true
+  //     },
+  //     {
+  //       id: 'deepseek/deepseek-v3',
+  //       name: 'DeepSeek V3',
+  //       temperature: 0.6,
+  //       maxTokens: 7000,
+  //       contextLength: 62000,
+  //       match: ['deepseek-v3'],
+  //       vision: false,
+  //       functionCall: true,
+  //       reasoning: false
+  //     },
+  //     {
+  //       id: 'deepseek-r1',
+  //       name: 'DeepSeek R1',
+  //       temperature: 0.6,
+  //       maxTokens: 7000,
+  //       contextLength: 62000,
+  //       match: ['deepseek-r1'],
+  //       vision: false,
+  //       functionCall: true,
+  //       reasoning: true
+  //     }
+  //   ]
+  // },
 
-  // GitHub提供商特定模型配置
-  github: {
-    models: []
-  },
+  // // GitHub提供商特定模型配置
+  // github: {
+  //   models: []
+  // },
 
-  // 阿里云提供商特定模型配置
-  dashscope: {
-    models: []
-  },
+  // // 阿里云提供商特定模型配置
+  // dashscope: {
+  //   models: []
+  // },
 
-  // OpenRouter提供商特定模型配置
-  openrouter: {
-    models: []
-  },
+  // // OpenRouter提供商特定模型配置
+  // openrouter: {
+  //   models: []
+  // }
 
   // Grok提供商特定模型配置
-  grok: {
-    models: [
-      {
-        id: 'grok-3-mini-fast-beta',
-        name: 'Grok 3 Mini Fast Beta',
-        temperature: 1,
-        contextLength: 120000,
-        maxTokens: 100_000,
-        match: ['grok-3-mini-fast', 'grok-3-mini-fast-latest', 'grok-3-mini-fast-beta'],
-        vision: false,
-        functionCall: true,
-        reasoning: true
-      },
-      {
-        id: 'grok-3-mini-beta',
-        name: 'Grok 3 Mini Beta',
-        temperature: 1,
-        contextLength: 120000,
-        maxTokens: 100_000,
-        match: ['grok-3-mini', 'grok-3-mini-latest', 'grok-3-mini-beta'],
-        vision: false,
-        functionCall: true,
-        reasoning: true
-      },
-      {
-        id: 'grok-3-fast-beta',
-        name: 'Grok 3 Fast Beta',
-        temperature: 0.7,
-        contextLength: 120000,
-        maxTokens: 100_000,
-        match: ['grok-3-fast', 'grok-3-fast-latest', 'grok-3-fast-beta'],
-        vision: false,
-        functionCall: true,
-        reasoning: false
-      },
-      {
-        id: 'grok-2-vision-1212',
-        name: 'Grok 2 Vision 1212',
-        temperature: 0.7,
-        contextLength: 32000,
-        maxTokens: 32000,
-        match: ['grok-2-vision', 'grok-2-vision-latest', 'grok-2-vision-1212'],
-        vision: true,
-        functionCall: false,
-        reasoning: false
-      },
-      {
-        id: 'grok-2-image-1212',
-        name: 'Grok 2 Image 1212',
-        temperature: 0.7,
-        contextLength: 130_000,
-        maxTokens: 100_000,
-        match: ['grok-2-image', 'grok-2-image-latest', 'grok-2-image-1212'],
-        vision: true,
-        functionCall: false,
-        reasoning: false
-      },
-      {
-        id: 'grok-3-beta',
-        name: 'Grok 3 Beta',
-        temperature: 0.7,
-        contextLength: 120000,
-        maxTokens: 100_000,
-        match: ['grok-3', 'grok-3-latest', 'grok-3-beta'],
-        vision: false,
-        functionCall: true,
-        reasoning: false
-      },
-      {
-        id: 'grok-2-1212',
-        name: 'Grok 2 1212',
-        contextLength: 120000,
-        temperature: 0.7,
-        maxTokens: 100_000,
-        match: ['grok-2', 'grok-2-latest', 'grok-2-1212'],
-        vision: false,
-        functionCall: true,
-        reasoning: false
-      }
-    ]
-  },
+  // grok: {
+  //   models: [
+  //     {
+  //       id: 'grok-3-mini-fast-beta',
+  //       name: 'Grok 3 Mini Fast Beta',
+  //       temperature: 1,
+  //       contextLength: 120000,
+  //       maxTokens: 100_000,
+  //       match: ['grok-3-mini-fast', 'grok-3-mini-fast-latest', 'grok-3-mini-fast-beta'],
+  //       vision: false,
+  //       functionCall: true,
+  //       reasoning: true
+  //     },
+  //     {
+  //       id: 'grok-3-mini-beta',
+  //       name: 'Grok 3 Mini Beta',
+  //       temperature: 1,
+  //       contextLength: 120000,
+  //       maxTokens: 100_000,
+  //       match: ['grok-3-mini', 'grok-3-mini-latest', 'grok-3-mini-beta'],
+  //       vision: false,
+  //       functionCall: true,
+  //       reasoning: true
+  //     },
+  //     {
+  //       id: 'grok-3-fast-beta',
+  //       name: 'Grok 3 Fast Beta',
+  //       temperature: 0.7,
+  //       contextLength: 120000,
+  //       maxTokens: 100_000,
+  //       match: ['grok-3-fast', 'grok-3-fast-latest', 'grok-3-fast-beta'],
+  //       vision: false,
+  //       functionCall: true,
+  //       reasoning: false
+  //     },
+  //     {
+  //       id: 'grok-2-vision-1212',
+  //       name: 'Grok 2 Vision 1212',
+  //       temperature: 0.7,
+  //       contextLength: 32000,
+  //       maxTokens: 32000,
+  //       match: ['grok-2-vision', 'grok-2-vision-latest', 'grok-2-vision-1212'],
+  //       vision: true,
+  //       functionCall: false,
+  //       reasoning: false
+  //     },
+  //     {
+  //       id: 'grok-2-image-1212',
+  //       name: 'Grok 2 Image 1212',
+  //       temperature: 0.7,
+  //       contextLength: 130_000,
+  //       maxTokens: 100_000,
+  //       match: ['grok-2-image', 'grok-2-image-latest', 'grok-2-image-1212'],
+  //       vision: true,
+  //       functionCall: false,
+  //       reasoning: false
+  //     },
+  //     {
+  //       id: 'grok-3-beta',
+  //       name: 'Grok 3 Beta',
+  //       temperature: 0.7,
+  //       contextLength: 120000,
+  //       maxTokens: 100_000,
+  //       match: ['grok-3', 'grok-3-latest', 'grok-3-beta'],
+  //       vision: false,
+  //       functionCall: true,
+  //       reasoning: false
+  //     },
+  //     {
+  //       id: 'grok-2-1212',
+  //       name: 'Grok 2 1212',
+  //       contextLength: 120000,
+  //       temperature: 0.7,
+  //       maxTokens: 100_000,
+  //       match: ['grok-2', 'grok-2-latest', 'grok-2-1212'],
+  //       vision: false,
+  //       functionCall: true,
+  //       reasoning: false
+  //     }
+  //   ]
+  // },
 
-  // Azure OpenAI提供商特定模型配置
-  'azure-openai': {
-    models: []
-  }
+  // // Azure OpenAI提供商特定模型配置
+  // 'azure-openai': {
+  //   models: []
+  // }
 }
 
 /**

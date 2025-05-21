@@ -39,49 +39,49 @@ const DEFAULT_INMEMORY_SERVERS: Record<string, MCPServerConfig> = {
     env: {},
     disable: false
   },
-  bochaSearch: {
-    args: [],
-    descriptions: 'DeepChat内置博查搜索服务',
-    icons: '🔍',
-    autoApprove: ['all'],
-    type: 'inmemory' as MCPServerType,
-    command: 'bochaSearch',
-    env: {
-      apiKey: 'YOUR_BOCHA_API_KEY' // 需要用户提供实际的API Key
-    },
-    disable: false
-  },
-  braveSearch: {
-    args: [],
-    descriptions: 'DeepChat内置Brave搜索服务',
-    icons: '🦁',
-    autoApprove: ['all'],
-    type: 'inmemory' as MCPServerType,
-    command: 'braveSearch',
-    env: {
-      apiKey: 'YOUR_BRAVE_API_KEY' // 需要用户提供实际的API Key
-    },
-    disable: false
-  },
-  difyKnowledge: {
-    args: [],
-    descriptions: 'DeepChat内置Dify知识库检索服务',
-    icons: '📚',
-    autoApprove: ['all'],
-    type: 'inmemory' as MCPServerType,
-    command: 'difyKnowledge',
-    env: {
-      configs: [
-        {
-          description: 'this is a description for the current knowledge base',
-          apiKey: 'YOUR_DIFY_API_KEY',
-          datasetId: 'YOUR_DATASET_ID',
-          endpoint: 'http://localhost:3000/v1'
-        }
-      ]
-    },
-    disable: false
-  },
+  // bochaSearch: {
+  //   args: [],
+  //   descriptions: 'DeepChat内置博查搜索服务',
+  //   icons: '🔍',
+  //   autoApprove: ['all'],
+  //   type: 'inmemory' as MCPServerType,
+  //   command: 'bochaSearch',
+  //   env: {
+  //     apiKey: 'YOUR_BOCHA_API_KEY' // 需要用户提供实际的API Key
+  //   },
+  //   disable: false
+  // },
+  // braveSearch: {
+  //   args: [],
+  //   descriptions: 'DeepChat内置Brave搜索服务',
+  //   icons: '🦁',
+  //   autoApprove: ['all'],
+  //   type: 'inmemory' as MCPServerType,
+  //   command: 'braveSearch',
+  //   env: {
+  //     apiKey: 'YOUR_BRAVE_API_KEY' // 需要用户提供实际的API Key
+  //   },
+  //   disable: false
+  // },
+  // difyKnowledge: {
+  //   args: [],
+  //   descriptions: 'DeepChat内置Dify知识库检索服务',
+  //   icons: '📚',
+  //   autoApprove: ['all'],
+  //   type: 'inmemory' as MCPServerType,
+  //   command: 'difyKnowledge',
+  //   env: {
+  //     configs: [
+  //       {
+  //         description: 'this is a description for the current knowledge base',
+  //         apiKey: 'YOUR_DIFY_API_KEY',
+  //         datasetId: 'YOUR_DATASET_ID',
+  //         endpoint: 'http://localhost:3000/v1'
+  //       }
+  //     ]
+  //   },
+  //   disable: false
+  // },
   imageServer: {
     args: [],
     descriptions: 'Image processing MCP service',
@@ -101,45 +101,45 @@ const DEFAULT_INMEMORY_SERVERS: Record<string, MCPServerConfig> = {
     command: 'powerpack',
     env: {},
     disable: false
-  },
-  ragflowKnowledge: {
-    args: [],
-    descriptions: 'DeepChat内置RAGFlow知识库检索服务',
-    icons: '📚',
-    autoApprove: ['all'],
-    type: 'inmemory' as MCPServerType,
-    command: 'ragflowKnowledge',
-    env: {
-      configs: [
-        {
-          description: '默认RAGFlow知识库',
-          apiKey: 'YOUR_RAGFLOW_API_KEY',
-          datasetIds: ['YOUR_DATASET_ID'],
-          endpoint: 'http://localhost:8000'
-        }
-      ]
-    },
-    disable: false
-  },
-  fastGptKnowledge: {
-    args: [],
-    descriptions: 'DeepChat内置FastGPT知识库检索服务',
-    icons: '📚',
-    autoApprove: ['all'],
-    type: 'inmemory' as MCPServerType,
-    command: 'fastGptKnowledge',
-    env: {
-      configs: [
-        {
-          description: 'this is a description for the current knowledge base',
-          apiKey: 'YOUR_FastGPT_API_KEY',
-          datasetId: 'YOUR_DATASET_ID',
-          endpoint: 'http://localhost:3000/api'
-        }
-      ]
-    },
-    disable: false
   }
+  // ragflowKnowledge: {
+  //   args: [],
+  //   descriptions: 'DeepChat内置RAGFlow知识库检索服务',
+  //   icons: '📚',
+  //   autoApprove: ['all'],
+  //   type: 'inmemory' as MCPServerType,
+  //   command: 'ragflowKnowledge',
+  //   env: {
+  //     configs: [
+  //       {
+  //         description: '默认RAGFlow知识库',
+  //         apiKey: 'YOUR_RAGFLOW_API_KEY',
+  //         datasetIds: ['YOUR_DATASET_ID'],
+  //         endpoint: 'http://localhost:8000'
+  //       }
+  //     ]
+  //   },
+  //   disable: false
+  // },
+  // fastGptKnowledge: {
+  //   args: [],
+  //   descriptions: 'DeepChat内置FastGPT知识库检索服务',
+  //   icons: '📚',
+  //   autoApprove: ['all'],
+  //   type: 'inmemory' as MCPServerType,
+  //   command: 'fastGptKnowledge',
+  //   env: {
+  //     configs: [
+  //       {
+  //         description: 'this is a description for the current knowledge base',
+  //         apiKey: 'YOUR_FastGPT_API_KEY',
+  //         datasetId: 'YOUR_DATASET_ID',
+  //         endpoint: 'http://localhost:3000/api'
+  //       }
+  //     ]
+  //   },
+  //   disable: false
+  // }
 }
 
 const DEFAULT_MCP_SERVERS = {
